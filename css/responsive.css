@@ -440,3 +440,104 @@
 		margin-right: 17px;
 	}
 }
+/* ===================================================
+   MOBILE RESPONSIVENESS FIXES
+   =================================================== */
+
+
+
+/* Hero section: stack image + text vertically on mobile */
+@media (max-width: 991px) {
+    .home_banner_area .banner_inner .banner_content .media {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .home_banner_area .banner_inner .banner_content .media .d-flex {
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+    }
+    .home_banner_area .banner_inner .banner_content .media .d-flex img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 320px !important;
+        object-fit: cover !important;
+    }
+    .home_banner_area .banner_inner .banner_content .media .media-body {
+        padding-left: 0 !important;
+        margin-top: 24px !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .personal_text .basic_info,
+    .personal_text .personal_social {
+        justify-content: center !important;
+    }
+    .home_banner_area {
+        margin-bottom: 0 !important;
+        padding-bottom: 60px !important;
+    }
+}
+
+/* Timeline tabs: fix fixed min-width on mobile */
+@media (max-width: 767px) {
+    .tabs_inner .tab-content .tab-pane .list li .media {
+        flex-direction: column !important;
+    }
+    .tabs_inner .tab-content .tab-pane .list li .media .d-flex {
+        min-width: unset !important;
+        width: 100% !important;
+        padding-right: 0 !important;
+        padding-bottom: 6px !important;
+        text-align: left !important;
+    }
+    .tabs_inner .tab-content .tab-pane .list li .media .media-body {
+        padding-left: 0 !important;
+    }
+    .tabs_inner .tab-content .tab-pane .list:before {
+        display: none !important;
+    }
+    .tabs_inner .tab-content .tab-pane .list li span {
+        display: none !important;
+    }
+
+    /* Project cards: full width on mobile */
+    .col-lg-6 .project_card {
+        margin-bottom: 20px;
+    }
+
+    /* About section: stack columns */
+    .welcome_area .row.welcome_inner > .col-lg-6 {
+        margin-bottom: 40px;
+    }
+
+    /* Nav branding */
+    .navbar-brand span {
+        color: #6c63ff !important;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .personal_text h3 {
+        font-size: 28px !important;
+    }
+    .personal_text h4 {
+        font-size: 16px !important;
+    }
+    .home_banner_area .banner_inner .banner_content .media .d-flex img {
+        max-height: 240px !important;
+    }
+    .project_card {
+        padding: 18px !important;
+    }
+    .wel_item {
+        text-align: center;
+    }
+    .main_btn {
+        display: block !important;
+        text-align: center !important;
+        margin-bottom: 12px !important;
+        margin-right: 0 !important;
+    }
+}
