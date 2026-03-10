@@ -449,7 +449,15 @@
 
         <!-- FINAL MOBILE NAV FIX - must load last to override all other styles -->
         <style>
-            /* Reset any abnormal cursor from stellar.js or other libs */
+            /* Progress bar fix - fill based on aria-valuenow */
+            .skill_main .progress { background:#e8eaf6; border-radius:10px; height:8px; overflow:visible; }
+            .skill_main .progress-bar { background: linear-gradient(90deg, #6c63ff, #88f3ff); border-radius:10px; height:100%; transition: width 1.2s ease-in-out; }
+            /* Set widths directly via CSS for each bar */
+            .skill_item:nth-child(1) .progress-bar { width: 90%; }
+            .skill_item:nth-child(2) .progress-bar { width: 82%; }
+            .skill_item:nth-child(3) .progress-bar { width: 78%; }
+            .skill_item:nth-child(4) .progress-bar { width: 80%; }
+            .skill_item:nth-child(5) .progress-bar { width: 75%; }
             body, body * { cursor: default !important; }
             a, button, [role="button"], .navbar-toggler, .nav-link { cursor: pointer !important; }
             @media (max-width: 991px) {
