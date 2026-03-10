@@ -457,11 +457,13 @@
         max-width: 320px !important;
         margin: 0 auto !important;
     }
-    .home_banner_area .banner_inner .banner_content .media .d-flex img {
+    .home_banner_area .banner_inner .banner_content .media .d-flex > div {
         width: 220px !important;
         height: 220px !important;
-        max-height: unset !important;
-        border-radius: 50% !important;
+    }
+    .home_banner_area .banner_inner .banner_content .media .d-flex img {
+        width: 100% !important;
+        height: 100% !important;
         object-fit: cover !important;
     }
     .home_banner_area .banner_inner .banner_content .media .media-body {
