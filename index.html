@@ -203,9 +203,13 @@
                                     <div class="progress_br"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div></div></div>
                                 </div>
                                 <div class="skill_item">
-                                    <h4>React / Angular / ASP.NET <span class="counter">75</span>%</h4>
+                                    <span class="skill_badge">React</span><span class="skill_badge">Angular</span><span class="skill_badge">Git</span><span class="skill_badge">Linux</span><span class="skill_badge">OpenCV</span><span class="skill_badge">Computer Vision</span>
                                     <div class="progress_br"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div></div>
                                 </div>
+                                <div class="skill_item">
+    <h4>Computer Vision / Image Processing <span class="counter">70</span>%</h4>
+    <div class="progress_br"><div class="progress"><div class="progress-bar" role="progressbar" style="width:70%"></div></div></div>
+</div>
                             </div>
                             <div style="margin-top:20px;">
                                 <span class="skill_badge">Python</span><span class="skill_badge">SQL</span><span class="skill_badge">Java</span><span class="skill_badge">C#</span>
@@ -314,6 +318,31 @@
                             <a href="https://github.com/PanchamiShiv/ai_voice-assistant-raspberrypi" target="_blank" class="gh_link"><i class="fa fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
+
+                    <div class="col-lg-6">
+    <div class="project_card">
+        <div class="proj_type">🔬 Computer Vision · Image Processing</div>
+        <h4>Image Segmentation & Fourier Boundary Analysis</h4>
+        <p>A complete image processing pipeline built in Java, covering segmentation, morphological filtering, boundary extraction, and Fourier-based shape description.</p>
+        <ul>
+            <li>Threshold-based segmentation with morphological erosion filtering for noise removal</li>
+            <li>Connected boundary cloud extraction using 8-connectivity neighbour detection</li>
+            <li>Automatic seed point detection and iterative region growing for full contour tracing</li>
+            <li>Discrete Fourier Transform (DFT) shape descriptors with low-frequency reconstruction for smooth contour output</li>
+            <li>Java Swing GUI displaying all 5 processing stages in real time</li>
+        </ul>
+        <div style="margin-top:14px;">
+            <span class="skill_badge">Java</span>
+            <span class="skill_badge">Image Processing</span>
+            <span class="skill_badge">DFT</span>
+            <span class="skill_badge">Computer Vision</span>
+            <span class="skill_badge">Swing GUI</span>
+        </div>
+        <a href="https://github.com/PanchamiShiv/image-processing-fourier-boundary" target="_blank" class="gh_link">
+            <i class="fa fa-github"></i> View on GitHub
+        </a>
+    </div>
+</div>
                     <div class="col-lg-6">
                         <div class="project_card">
                             <div class="proj_type">📊 ML Analytics · Data Platform</div>
@@ -463,6 +492,7 @@
             .skill_item:nth-child(3) .progress-bar { width: 78%; }
             .skill_item:nth-child(4) .progress-bar { width: 80%; }
             .skill_item:nth-child(5) .progress-bar { width: 75%; }
+            .skill_item:nth-child(6) .progress-bar { width: 70%; }
             body, body * { cursor: default !important; }
             a, button, [role="button"], .navbar-toggler, .nav-link { cursor: pointer !important; }
             @media (max-width: 991px) {
